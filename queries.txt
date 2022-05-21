@@ -1,0 +1,1 @@
+INSERT INTO `users` (`user_id`, `user_first_name`, `user_last_name`, `user_email`, `user_username`, `user_password`, `user_role`, `user_created`) VALUES ('1', 'Shahzad', 'Farooq', 'crindalwalt@mail.com', 'crindalwalt', 'crimson', '1', current_timestamp());
