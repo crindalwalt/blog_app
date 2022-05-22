@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+
+?>
 <header class="header">
     <!-- Main Navbar-->
     <nav class="navbar navbar-expand-lg">
@@ -38,8 +42,10 @@
                 <!-- <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
                 <ul class="langs navbar-text"><a href="#" class="active">EN</a><span> </span><a href="#">ES</a></ul> -->
 
+                
                 <div class="navbar-text mx-3">
                     <a class="btn btn-md btn-primary" href="login.php">
+                        
                         Login / Register
                     </a>
                 </div>

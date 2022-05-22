@@ -18,30 +18,28 @@
         </button>
     </div>
         ';
-    } 
+    }
     ?>
     <div class="mainBox">
         <div class="box">
             <h2 class="my-3">
                 Login to your account
             </h2>
+            <form action="server/login_handler.php" method="POST">
 
-            <div class="  my-2  ">
+                <div class="  my-2">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class=" my-2">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <div class="  df my-2  ">
+                    <input type="submit" class="btn btn-lg btn-danger my-3  " id="submit" value="Login">
+                </div>
 
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username">
-            </div>
-            <div class=" my-2   ">
-
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
-            </div>
-
-            <div class="  df my-2  ">
-
-
-                <input type="submit" class="btn btn-lg btn-danger my-3  " id="submit" value="Login">
-            </div>
+            </form>
             <div class="my-2">
                 <a href="register.php " class="btn-md btn btn-info px-5">
                     Not having an account ? <b>Create an account</b>
