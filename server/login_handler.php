@@ -57,6 +57,8 @@
 
                 }else{
                     echo "+    Password does not matched<br> ";
+                    header("location:../login.php?login=error");
+                    exit();
 
                 }
 
@@ -91,11 +93,10 @@
 
 
             
-        }else if($row_in_db < 1 ){
-            echo  "==>   ($row_in_db) entries found in the database<br>";
-
         }else{
             echo "==>   record not found with this username<br>";
+            header("location:../login.php?acc=null");
+            exit();
         }
 
 

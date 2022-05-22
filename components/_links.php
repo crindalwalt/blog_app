@@ -23,7 +23,7 @@
 <!-- For custom alert -->
 <link rel="stylesheet" href="css/alert.css">
 <!-- Favicon-->
-<link rel="shortcut icon" href="favicon.png">
+<link rel="shortcut icon" href="../img/favicon.ico">
 <!-- Tweaks for older IEs-->
 <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>

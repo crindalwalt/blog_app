@@ -19,6 +19,26 @@
     </div>
         ';
     }
+    if (isset($_GET['login']) == 'error') {
+        echo '
+        <div class=" container my-4 alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error! </strong>Account login credentials wrong
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+        ';
+    }
+    if (isset($_GET['acc']) == 'null') {
+        echo '
+        <div class=" container my-4 alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Warning! </strong>Account not found
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+        ';
+    }
     ?>
     <div class="mainBox">
         <div class="box">
