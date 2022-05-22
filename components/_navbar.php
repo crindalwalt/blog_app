@@ -41,14 +41,32 @@
                 </ul>
                 <!-- <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
                 <ul class="langs navbar-text"><a href="#" class="active">EN</a><span> </span><a href="#">ES</a></ul> -->
-
-                
-                <div class="navbar-text mx-3">
-                    <a class="btn btn-md btn-primary" href="login.php">
+                <?php
+                    if(isset($_SESSION['login'])&& $_SESSION['login']== true){
+                        echo '
+                        <div class="navbar-text mx-3">
+                        <a class="btn btn-md btn-primary" href="server/logout_handler.php">
+    
+                           Logout
+                        </a>
+                    </div>
                         
-                        Login / Register
-                    </a>
-                </div>
+                        ';
+                    }else{
+                        echo '
+                        <div class="navbar-text mx-3">
+                        <a class="btn btn-md btn-primary" href="login.php">
+    
+                            Login / Register
+                        </a>
+                    </div>
+                        
+                        ';
+
+                    }
+                
+                ?>
+               
 
 
 
